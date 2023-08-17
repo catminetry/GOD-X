@@ -1,7 +1,12 @@
-print("loading..")
-wait(0.5)
-print("Welcome to GODX!")
-wait(0.25)
-print("zhenyuace123")
-wait(0.25)
+CoreGui:SetCore("SendNotification", {
+    Title = "GODX",
+    Text =  "加载中，请稍等..",
+    Duration = 5, 
+})
+wait(5)
+CoreGui:SetCore("SendNotification", {
+    Title = "GODX",
+    Text =  "加载成功！",
+    Duration = 5, 
+})
 loadstring(game:HttpGet("https://pastebin.com/raw/14LCVMGE"))()
